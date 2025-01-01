@@ -1,0 +1,30 @@
+.settingsCard {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.settingGroup {
+  width: 100%;
+}
+
+.settingGroup h4 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.settingGroup :global(.ant-form-item) {
+  margin-bottom: 1rem;
+}
+
+.settingGroup :global(.ant-input-number) {
+  width: 100px;
+}
+
+.settingGroup :global(.ant-space) {
+  gap: 2rem !important;
+}
+
+.settingGroup :global(.ant-divider) {
+  margin: 1rem 0;
+}

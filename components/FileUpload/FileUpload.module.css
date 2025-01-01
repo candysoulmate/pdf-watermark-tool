@@ -1,0 +1,85 @@
+.uploadContainer {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.uploadContainer :global(.ant-upload-drag) {
+  padding: 24px;
+  background: #fff;
+  border: 2px dashed #e8e8e8;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.uploadContainer :global(.ant-upload-drag:hover) {
+  border-color: #ff7875;
+}
+
+.uploadContainer :global(.ant-upload-drag-icon) {
+  color: #ff7875;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+
+.pdfIcon {
+  font-size: 64px;
+  color: #ff7875;
+  margin-right: 24px;
+}
+
+.fileDetails {
+  text-align: left;
+  flex: 1;
+}
+
+.fileName {
+  font-size: 18px;
+  font-weight: 500;
+  color: #262626;
+  margin-bottom: 8px;
+  word-break: break-all;
+}
+
+.fileSize,
+.fileType,
+.pageCount {
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.fileSize {
+  color: #595959;
+}
+
+.fileType {
+  color: #ff7875;
+}
+
+.pageCount {
+  color: #ff7875;
+  font-weight: 500;
+}
+
+/* 添加动画效果 */
+.fileInfo {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
